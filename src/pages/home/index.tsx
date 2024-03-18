@@ -1,6 +1,5 @@
 import TopComponentsSection from "../../components/home/topSection";
 import BottomSectionComponents from "../../components/home/bottomSection";
-import CustomMenu from "../../components/menu";
 
 const Home = () => {
   return (
