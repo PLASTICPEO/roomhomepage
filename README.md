@@ -10,7 +10,7 @@
   </p>
 </p>
 
-![GitHub Image](https://imgur.com/SwIqIgQ)
+![GitHub Image](https://i.imgur.com/SwIqIgQ.png)
 
 ### Built With
 
