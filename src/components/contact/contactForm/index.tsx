@@ -6,11 +6,8 @@ const ContactForm: React.FC<ContactFormPropsTypes> = ({
   handleSubmit,
 }) => {
   return (
-    <div className="xl:pt-[0] xl:pt-12 pt-7 px-4">
-      <form
-        onSubmit={handleSubmit}
-        className="flex flex-col justify-center xl:w-1/2 xl:absolute xl:top-[10%]  xl:left-[3%] "
-      >
+    <div className="xl:pt-[0] xl:pt-12 pt-14 px-4">
+      <form onSubmit={handleSubmit} className="flex flex-col xl:mt-20 xl:ml-6">
         <input
           onChange={handleChange}
           className="border-2 border-neutral-950 p-1.5 outline-none m-1.5 placeholder-gray-900 placeholder:roboto  bg-transparent"

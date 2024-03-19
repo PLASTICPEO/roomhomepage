@@ -1,13 +1,16 @@
 import { ReactNode } from "react";
 import CustomMenu from "../menu";
+import Header from "../navigation";
 
-const DefaultLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
+const DefaultLayout: React.FC<{ children: ReactNode; isWhite?: boolean }> = ({
+  children,
+  isWhite = false,
+}) => {
   return (
     <div className="flex flex-col min-h-screen">
-      <div className="flex-grow ">
-        <CustomMenu />
-        <>{children}</>
-      </div>
+      <Header isWhite={isWhite} />
+      <CustomMenu />
+      <>{children}</>
     </div>
   );
 };

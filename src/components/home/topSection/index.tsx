@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Logo from "../../logo";
-import NavigationComponent from "../../navigation";
+import { Link } from "react-router-dom";
+
 import desktopHero1 from "../../../assets/img/desktop-hero-1.jpg";
 import desktopImageHero2 from "../../../assets/img/desktop-image-hero-2.jpg";
 import desktopImageHero3 from "../../../assets/img/desktop-image-hero-3.jpg";
@@ -43,12 +43,7 @@ const TopComponentsSection: React.FC<any> = () => {
       <div
         style={{ backgroundImage: `url(${description[currentIndex].img})` }}
         className={`xl:col-span-6  bg-cover xl:h-full h-96 ease-in duration-500`}
-      >
-        <div className="xl:flex hidden space-x-12 m-10 ">
-          <Logo />
-          <NavigationComponent />
-        </div>
-      </div>
+      ></div>
       <div className="flex flex-col items-center justify-center xl:col-span-4 bg-[#FFFFFF] px-10 py-14  font-League relative ">
         <div className="flex flex-col space-y-2">
           <p className="xl:text-5xl text-xl font-bold ease-in duration-500">
@@ -57,12 +52,14 @@ const TopComponentsSection: React.FC<any> = () => {
           <p className="xl:text-xl font-thin text-lg">
             {description[currentIndex].body}
           </p>
-          <div className="flex items-center space-x-4 hover:scale-95 transition cursor-pointer">
-            <p className="text-sm font-bold font-League tracking-[10px]">
-              SHOP NOW
-            </p>
-            <span className="material-symbols-outlined">trending_flat</span>
-          </div>
+          <Link to={"/shop"}>
+            <div className="flex items-center space-x-4 hover:scale-95 transition cursor-pointer">
+              <p className="text-sm font-bold font-League tracking-[10px]">
+                SHOP NOW
+              </p>
+              <span className="material-symbols-outlined">trending_flat</span>
+            </div>
+          </Link>
         </div>
 
         <div className="absolute bottom-0 xl:left-0 right-0  flex">

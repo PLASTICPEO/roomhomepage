@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         League: ["League Spartan", "sans-serif"],
+        Ojuju: ["Ojuju", "sans-serif"],
       },
     },
   },

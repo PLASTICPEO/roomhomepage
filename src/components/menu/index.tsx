@@ -28,7 +28,9 @@ const CustomMenu = () => {
             x: { duration: 0.5 },
           }}
           dragConstraints={{ left: -100, right: 100 }}
-          className="absolute flex items-center justify-center space-x-12 h-20 w-full bg-[#FFFFFF] rounded-br-md"
+          className="absolute flex items-center justify-center space-x-12 h-20 w-full bg-[#FFFFFF] rounded-br-md border-b-[1px] broder-[black] shadow-md
+
+          "
         >
           <button onClick={toggleMenu}>
             <span className="material-symbols-outlined text-3xl">close</span>

@@ -1,9 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import { ROOT_PATHS } from "./routes/root";
-import Home from "./pages/home";
 import { PAGE_PATH } from "./routes/pages/index.enum";
-import About from "./pages/about";
+
 import DefaultLayout from "./components/layout";
+import Home from "./pages/home";
+import About from "./pages/about";
 import Contact from "./pages/contact";
 import Shop from "./pages/shop";
 
@@ -13,7 +14,7 @@ function App() {
       <Route
         path={ROOT_PATHS.ROOT}
         element={
-          <DefaultLayout>
+          <DefaultLayout isWhite>
             <Home />
           </DefaultLayout>
         }
